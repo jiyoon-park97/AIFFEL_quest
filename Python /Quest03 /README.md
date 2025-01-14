@@ -37,8 +37,9 @@
 
 # 회고(참고 링크 및 코드 개선)
 ```
-![image](https://github.com/user-attachments/assets/6e0253b5-4402-43f6-8e29-adb6c263bee3)
-함수명을 banana로 바꾸어서 한것을 보면 알 수 있듯이, 개념을 잘 이해하려는 노력이 보였다. 
+[image](https://github.com/user-attachments/assets/6e0253b5-4402-43f6-8e29-adb6c263bee3)
+회고에 find_min, find_max를 쓰는 이유를 몰라서 여러가지로 바꿔보는 시도를 했다. 'a', 'b', 'apple','banana'로 바꿔도 실행이 되었다라고 하셨는데, 함수명을 banana로 바꾸어서 한것을 보면 알 수 있듯이, 개념을 잘 이해하려는 노력이 보였던 것 같다.
+
 # 리뷰어의 회고를 작성합니다.
 # 코드 리뷰 시 참고한 링크가 있다면 링크와 간략한 설명을 첨부합니다.
 # 코드 리뷰를 통해 개선한 코드가 있다면 코드와 간략한 설명을 첨부합니다.
