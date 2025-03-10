@@ -1,0 +1,101 @@
+import 'package:flutter/material.dart';
+
+class MyPageScreen extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('My Page'),
+          leading: IconButton(
+            onPressed: () {
+              Navigator.pop(context);
+            },
+            color: Colors.black,
+            icon: Icon(Icons.arrow_back),
+          ),
+        ),
+        body: Padding(
+          padding: EdgeInsets.all(16.0),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              // 프로필 정보
+              Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  CircleAvatar(
+                    radius: 40,
+                    backgroundImage: AssetImage('images/profile.jpg'),
+                    backgroundColor: Colors.grey,
+                  ),
+                  SizedBox(width: 10),
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        "사용자 이름",
+                        style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                      ),
+                      SizedBox(height: 5),
+                      Text(
+                        "블로그 방문자 수",
+                        style: TextStyle(fontSize: 14, color: Colors.grey),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+              SizedBox(height: 20), // 프로필과 아이템 사이 간격 추가
+
+              Divider(thickness: 1, color: Colors.grey),
+
+              SizedBox(height: 10),
+              // 가로로 5개 아이템 배치
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween, // 간격 균등 배치
+                children: List.generate(5, (index) {
+                  return Column(
+                    children: [
+                      Icon(Icons.square, size: 30, color: Colors.grey), // 아이콘
+                      SizedBox(height: 5),
+                      Text(
+                        "메뉴 ${index + 1}",
+                        style: TextStyle(fontSize: 14, fontWeight: FontWeight.w500),
+                      ),
+                    ],
+                  );
+                }),
+              ),
+              SizedBox(height: 20),
+
+              Divider(thickness: 1, color: Colors.grey),
+
+              SizedBox(height: 10),
+
+              Column(
+                children: List.generate(5,(index) {
+                  return Padding(
+                    padding: EdgeInsets.symmetric(vertical : 20.0),
+                    child: Row(
+                      children: [
+                        Icon(Icons. square_rounded, size: 30, color: Colors.grey),
+                        SizedBox(width: 10),
+                        Text(
+                          "메뉴 ${index +1}",
+                          style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
+                        )
+                      ]
+                    )
+                  );
+                })
+              )
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
