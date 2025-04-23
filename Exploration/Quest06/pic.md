@@ -10,5 +10,8 @@
 #세번째  
 ![이상해](https://github.com/user-attachments/assets/849fb086-e1dc-4cde-8eef-950c4458c2c5)
 
-#네번째
+#네번째  
 ![바보같애](https://github.com/user-attachments/assets/9051041a-9df5-42a2-882f-32e4909ea6db)
+
+#회고  
+이미지가 내 맘대로 안 떠서 웃기고 답답했다. 
